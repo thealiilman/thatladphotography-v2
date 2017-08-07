@@ -1,0 +1,668 @@
+body {
+	height: auto;
+	width: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("fonts.googleapis.com/css?family=Quicksand");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Lobster";
+	src: url("fonts.googleapis.com/css?family=Lobster");
+	src: url("fonts/Lobster-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Ranga";
+	src: url("fonts.googleapis.com/css?family=ranga");
+	src: url("fonts/Ranga-Regular.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("fonts.googleapis.com/css?family=quicksand");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Quicksand";
+	src: url("fonts.googleapis.com/css?family=quicksand");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts.googleapis.com/css?family=roboto");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("fonts.googleapis.com/css?family=raleway");
+	src: url("fonts/Raleway-Light.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("fonts.googleapis.com/css?family=raleway");
+	src: url("fonts/Raleway-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+}
+
+/*Magic*/
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	/*background-image: url(images/Path%204.5%20250kb.png);
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;*/
+}
+
+#landing-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#nav-container {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	background-color: #333;
+	align-items: center;
+	font-family: "Quicksand";
+	font-size: 28px;
+	font-weight: 300;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	transition: background-color 0.25s;
+}
+
+#links {
+	display: flex;
+	width: 100%;
+	transition: margin-top 0.25s;
+}
+
+#links a {
+	cursor: pointer;
+}
+
+.linksOnOff {
+	margin-top: 0 !Important;
+}
+
+#menu {
+	display: flex;
+	height: 48px;
+	width: 48px;
+	margin: 8px 0 8px 0;
+	border-radius: 8px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.menu-line {
+	width: 30px;
+	border: 2px solid #66ED78;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 2px black;
+	transition: border 0.25s;
+}
+
+.menu-line:last-child {
+	margin-bottom: 0;
+}
+
+#menu:hover .menu-line {
+	border: 2px solid white;
+}
+
+#tlname {
+	margin: 0;
+	font-family: "Lobster";
+	font-weight: 400;
+	letter-spacing: 7.5px;
+	line-height: 1;
+	text-align: center;
+	color: white;
+	-webkit-text-stroke: #333 2px;
+	transition: font-size 0.25s;
+}
+
+#tlname span {
+	color: #66ED78;
+}
+
+#slogan {
+	color: #333;
+	font-family: "Ranga";
+	letter-spacing: 1.5px;
+	align-self: center;
+	position: absolute;
+	bottom: 0;
+	transition: font-size 0.25s;
+}
+
+.parallex {
+	position: fixed;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-image: url(images/Path%204.5%20250kb.png);
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*About*/
+#about-container {
+	background-color: rgba(102, 237, 120, 0.8);/*rgba(255, 255, 255, 0.8);*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: "Quicksand";
+	transition: padding 0.5s;
+}
+
+#about-container  h1 {
+	font-weight: 300;
+	margin: 0;
+	color: white;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
+}
+
+#about-container p {
+	font-weight: 500;
+	text-align: justify;
+	margin: 0;
+	margin-top: 32px;
+	line-height: 1.75;
+	color: #16331A;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+#about-container a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+#about-container a:hover {
+	color: white;
+}
+
+/*Gallery*/
+#gallery-container {
+	background-color: rgba(255, 255, 255, 0.8);/*rgba(102, 237, 120, 0.8);*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: "Quicksand";
+	color: #333;
+}
+
+#gallery-container h1 {
+	font-weight: 300;
+	margin: 0;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
+}
+
+#image-box {
+	height: auto;
+	width: auto;
+	margin-top: 32px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	/*background-color: rgba(102, 237, 120, 0.8);*/
+}
+
+#image-box img {
+	height: 275px;
+	width: 500px;
+	padding: 16px;
+	transition: 1s;
+}
+
+/*Reviews*/
+#reviews-container {
+	background-color: rgba(102, 237, 120, 0.8);/*rgba(102, 237, 120, 0.8);*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+#reviews-container h1 {
+	font-family: "Quicksand";
+	font-weight: 300;
+	margin: 0;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
+}
+
+#reviews-container p {
+	font-family: "Roboto";
+	font-weight: 400;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
+	margin: 16px 0px 0px 0px;
+}
+
+.dialogue-box {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 32px 12px;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #333;
+	margin-top: 32px;
+	transition: 0.25s;
+}
+
+.dialogue-box hr {
+	margin: 0;
+	border: 1px solid #66ed78;
+}
+
+.dialogue-box p {
+	margin: 0 0 16px !important;
+	font-family: "Raleway" !important;
+	font-weight: 300;
+}
+
+.dialogue-box h2 {
+	margin: 0;
+	font-family: "Raleway";
+	font-weight: 600;
+	text-align: center;
+	margin-top: 32px;
+}
+
+/*Contact*/
+#contact-container {
+	background-color: rgba(255, 255, 255, 0.8);/*rgba(102, 237, 120, 0.8);*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	color: #333;
+}
+
+#contact-container h1 {
+	font-family: "Quicksand";
+	font-weight: 300;
+	margin: 0;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
+}
+
+form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 32px;
+}
+
+.form-nes, #form-msg {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	transition: 1s;
+}
+
+label {
+	font-family: "Quicksand";
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+input, textarea {
+	font-family: "Roboto";
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #66ed78;
+	background-color: transparent;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+	color: rgba(51, 51, 51, 0.35);
+	font-size: 16px;
+}
+
+button {
+	font-size: 20px;
+	font-family: "Quicksand";
+	font-weight: 700;
+	height: 48px;
+	width: 150px;
+	background-color: #66ed78;
+	margin-top: 32px;
+	color: white;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
+	border: none;
+	border-radius: 8px;
+	outline: none;
+	transition: background-color 0.25s, color 0.25s;
+}
+
+button:hover {
+	background-color: #333;
+	color: #66ed78;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(51, 51, 51, 0.8);
+	font-family: "Raleway";
+	font-weight: 600;
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.5s;
+}
+
+footer a:hover {
+	color: #66ed78;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 400px) {
+	#about-container p {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.container {
+		flex-direction: column;
+	}
+	
+	.parallex {
+		background-size: cover;
+	}
+	
+	#links {
+		background-color: #66ED78;
+		flex-direction: column;
+		text-align: center;
+		margin-top: -268px;
+	}
+	
+	#links a {
+		font-size: 24px;
+		width: 100%;
+		padding: 16px 0 16px 0;
+		transition: background-color 0.25s, font-size .25s;
+	}
+	
+	#links a:hover {
+		background-color: white;
+		font-size: 30px;
+	}
+	
+	#tlname {
+		font-size: 12vw; /*Or 64px*/
+	}
+	
+	#slogan {
+		font-size: 16px;
+		margin: 0 0 32px 0;
+	}
+	
+	/*About & Gallery*/
+	#about-container, #gallery-container {
+		height: auto;
+		padding: 64px;
+	}
+	
+	#about-container h1, #gallery-container h1, #reviews-container h1, #contact-container h1 {
+		font-size: 32px;
+	}
+	
+	#about-container p {
+		font-size: 20px;
+	}
+	
+	#image-box img {
+		height: 165px;
+		width: 165px;
+	}
+	
+	#image-box img:hover {
+		transform: scale(1.25);
+	}
+	
+	/*Reviews*/
+	#reviews-container {
+		height: auto;
+		padding: 64px 0;
+		flex-direction: column;
+	}
+	
+	#reviews-container p {
+		margin: 16px 0px 0px 0px;
+	}
+	
+	.dialogue-box {
+		width: 250px;
+		height: auto;
+		font-size: 24px;
+	}
+	
+	.dialogue-box h2 {
+		font-size: 20px;
+	}
+	
+	/*Contact*/
+	#contact-container {
+		height: auto;
+		padding: 64px 0;
+		flex-direction: column;
+	}
+	
+	form {
+		flex-direction: column;
+	}
+	
+	.form-nes, #form-msg {
+		width: 250px;
+		margin-top: 32px;
+	}
+	
+	.form-nes:first-child {
+		margin-top: 0;
+	}
+	
+	button {
+		font-size: 20px;
+		height: 48px;
+		width: 150px;
+	}
+	
+	footer {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+	#links a {
+		padding: 8px 0 8px 0;
+	}
+	
+	#tlname {
+		font-size: 8vw;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		flex-direction: row;
+	}
+	
+	#links {
+		height: 64px;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#links a {
+		margin-right: 36px;
+		transition: margin-bottom 0.25s;
+		color: white;
+	}
+	
+	#links a:last-child {
+		margin-right: 0;
+	}
+	
+	#links a:hover {
+		margin-bottom: 5px;
+	}
+	
+	#menu {
+		display: none;
+	}
+	
+	#tlname {
+		font-size: 90px;
+	}
+	
+	#slogan {
+		font-size: 24px;
+		margin-bottom: 64px;
+	}
+	
+	/*About, Gallery & Reviews*/
+	#about-container, #gallery-container, #reviews-container, #contact-container {
+		padding: 64px;
+		width: 100vw;
+	}
+	
+	#about-container h1, #gallery-container h1, #reviews-container h1, #contact-container h1 {
+		font-size: 48px;
+	}
+	
+	#about-container p, #reviews-container p {
+		font-size: 24px;
+	}
+	
+	/*Gallery*/
+	#image-box img {
+		height: 275px;
+		width: 500px;
+	}
+	
+	#image-box img:hover {
+		transform: scale(1.1);
+	}
+	
+	/*Reviews*/
+	#reviews-container {
+		flex-direction: column;
+	}
+	
+	#reviews-container p {
+		margin: 32px 0px 0px 0px;
+	}
+	
+	.dialogue-box {
+		width: 300px;
+		height: auto;
+	}
+	
+	.dialogue-box {
+		font-size: 24px;
+	}
+	
+	#contact-container {
+		flex-direction: column;
+	}
+	
+	form {
+		flex-wrap: wrap;
+	}
+	
+	.form-nes, #form-msg {
+		width: 550px;
+		margin-top: 32px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.parallex {
+		background-size: 100% 100%;
+	}
+	
+	#tlname {
+		font-size: 100px;
+	}
+	
+	#about-container, #gallery-container {
+		padding: 64px 256px;
+	}
+	
+	form {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	
+	.form-nes, #form-msg {
+		width: 550px;
+		margin-top: 32px;
+	}
+	
+	button {
+		font-size: 24px;
+		height: 56px;
+		width: 200px;
+	}
+	
+	footer {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	#reviews-container {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
