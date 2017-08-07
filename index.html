@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<title>ThatLad Photography</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="magic.css">
+</head>
+<body>
+<div class="parallex"></div>
+<div class="container">
+	<!--Landing-->
+	<div id="landing-container">
+		<div id="nav-container">
+			<div id="links">
+				<a id="about">About</a>
+				<a id="gallery">Gallery</a>
+				<a id="reviews">Reviews</a>
+				<a id="contact">Contact</a>
+			</div>
+			<div id="menu" onclick="slideDownLinks()">
+				<div class="menu-line"></div>
+				<div class="menu-line"></div>
+				<div class="menu-line"></div>
+			</div>
+		</div>
+		<h1 id="tlname">ThatLad<br><span>Photography</span></h1>
+		<p id="slogan">taking photos with a touch of class.</p>
+	</div>
+	
+	<!--About-->
+	<div id="about-container">
+		<h1>About</h1>
+		<p>Hello, I am ThatLad! I'm a self-taught photographer from <a href="https://en.wikipedia.org/wiki/Miss_Peregrine%27s_Home_for_Peculiar_Children_(film)" target="_blank">Cairnholm, Wales.</a><br>I've been a photographer for a few years. It may surprise you, but I'm only 16!<br>I love taking photos of the landscape, architecture, food and people.<br>Scroll down below to see my gallery or even get in touch with me to book a photoshoot!</p>
+	</div>
+	
+	<!--Gallery-->
+	<div id="gallery-container">
+		<h1>Gallery</h1>
+		<div id="image-box">
+			<a href="https://stocksnap.io/photo/112IOZ6JUI" target="_blank"><img src="images/archone.jpg"></a>
+			<a href="https://stocksnap.io/photo/N92R688ECZ" target="_blank"><img src="images/landone.jpg"></a>
+			<a href="https://stocksnap.io/photo/0D1IBSJMXG" target="_blank"><img src="images/archtwo.jpg"></a>
+			<a href="https://stocksnap.io/photo/2SE5DXKGKN" target="_blank"><img src="images/landtwo.jpg"></a>
+			<a href="https://stocksnap.io/photo/CWQTH6Q5O9" target="_blank"><img src="images/archthree.jpg"></a>
+			<a href="https://stocksnap.io/photo/H5JKHSCQ11" target="_blank"><img src="images/archfour.jpg"></a>
+			<a href="https://stocksnap.io/photo/QP5JOAZN7M" target="_blank"><img src="images/archfive.jpg"></a>
+			<a href="https://stocksnap.io/photo/T3106QPAFW" target="_blank"><img src="images/archsix.jpg"></a>
+		</div>
+	</div>
+	
+	<!--Reviews-->
+	<div id="reviews-container">
+		<div style="width: 100%;">
+			<h1>Reviews</h1>
+			<p>Here are a few reviews from ghosts and humans that I've worked with.</p>
+		</div>
+		<div class="dialogue-box">
+			<p>ThatLad is a top lad.<br>He may be young, but age doesn't define greatness.</p>
+			<hr>
+			<h2>John Doe</h2>
+		</div>
+		<div class="dialogue-box">
+			<p>Young lad's got a bright future! Had a great photoshoot, just exactly what I wanted.</p>
+			<hr>
+			<h2>Jane Doe</h2>
+		</div>
+		<div class="dialogue-box">
+			<p>Went on an adventure <br> with us Does.<br>Lad took some mint shots!</p>
+			<hr>
+			<h2>DoesTravels</h2>
+		</div>
+	</div>
+	
+	<!--Contact-->
+	<div id="contact-container">
+		<h1>Contact</h1>
+			<form>
+				<div class="form-nes">
+					<label>Name:</label>
+					<input type="text" placeholder="ThatLad aka Ali Ilman">
+				</div>
+				<div class="form-nes">
+					<label>Email:</label>
+					<input type="email" placeholder="thatlad@thatlad.photography">
+				</div>
+				<div class="form-nes">
+					<label>Subject:</label>
+					<input type="text" placeholder="Are you really Ali Ilman?">
+				</div>
+				<div id="form-msg">
+					<label>Message</label>
+					<textarea rows="1"placeholder="Maybe. Maybe not!"></textarea>
+				</div>
+			</form>
+			<button type="button" onclick="alert('ThatLad has no email!')">SEND</button>
+	</div>
+</div>
+
+<footer>
+	<h1>Created with love by <a href="ali-ilman.com" target="_blank">Ali Ilman</a>.</h1>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
