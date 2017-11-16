@@ -6,58 +6,6 @@ body {
 	box-sizing: border-box;
 }
 
-@font-face {
-	font-family: "Quicksand";
-	src: url("fonts.googleapis.com/css?family=Quicksand");
-	font-weight: 300;
-}
-
-@font-face {
-	font-family: "Lobster";
-	src: url("fonts.googleapis.com/css?family=Lobster");
-	src: url("fonts/Lobster-Regular.ttf") format("truetype");
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: "Ranga";
-	src: url("fonts.googleapis.com/css?family=ranga");
-	src: url("fonts/Ranga-Regular.ttf") format("truetype");
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: "Quicksand";
-	src: url("fonts.googleapis.com/css?family=quicksand");
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: "Quicksand";
-	src: url("fonts.googleapis.com/css?family=quicksand");
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("fonts.googleapis.com/css?family=roboto");
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: "Raleway";
-	src: url("fonts.googleapis.com/css?family=raleway");
-	src: url("fonts/Raleway-Light.ttf") format("truetype");
-	font-weight: 300;
-}
-
-@font-face {
-	font-family: "Raleway";
-	src: url("fonts.googleapis.com/css?family=raleway");
-	src: url("fonts/Raleway-SemiBold.ttf") format("truetype");
-	font-weight: 600;
-}
-
 /*Magic*/
 
 .container {
